@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Notícias do Futebol</string>
+
+    <string name="title_news">Notícias</string>
+    <string name="title_favorites">Favoritos</string>
+
+    <string name="cd_news_image">Imagem da notícia.</string>
+    <string name="cd_favorite_icon">Icone de favoritos.</string>
+    <string name="cd_share_icon">Icone de compartilhar.</string>
+
+    <string name="txt_open_link">Abrir Link</string>
+</resources>
