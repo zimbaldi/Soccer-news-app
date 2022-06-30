@@ -6,3 +6,5 @@ App Nativo Android de Notícias Sobre Futebol Feminino (Mês da Mulher). Este re
     - [release/android-jetpack-material-design-criando-apps-nativos-poderosos](https://github.com/zimbaldi/Soccer-news/tree/https/github.com/zimbaldi/Soccer-news/tree/release/android-jetpack-material-design-criando-apps-nativos-poderosos)
  2. Abstraindo Domínio de Apps Android Nativo com Java
     - [release/abstraindo-dominio-de-apps-android-nativo-com-java](https://github.com/zimbaldi/Soccer-news-app/tree/release/abstraindo-dominio-de-apps-android-nativo-com-java)
+ 3. Tradução do App para pt-br e Mudança nas Cores Seguindo o Material Design 2
+    - [release/traducao-do-app-para-portugues-BR](https://github.com/zimbaldi/Soccer-news-app/tree/release/traducao-do-app-para-portugues-BR)
