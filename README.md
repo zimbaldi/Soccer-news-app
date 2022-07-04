@@ -8,3 +8,5 @@ App Nativo Android de Notícias Sobre Futebol Feminino (Mês da Mulher). Este re
     - [release/abstraindo-dominio-de-apps-android-nativo-com-java](https://github.com/zimbaldi/Soccer-news-app/tree/release/abstraindo-dominio-de-apps-android-nativo-com-java)
  3. Tradução do App para pt-br e Mudança nas Cores Seguindo o Material Design 2
     - [release/traducao-do-app-para-portugues-BR](https://github.com/zimbaldi/Soccer-news-app/tree/release/traducao-do-app-para-portugues-BR)
+ 4. Adicionando Funcionalidades do Firebase
+    - [release/adicionando-funcionalidades-do-firebase](https://github.com/zimbaldi/Soccer-news-app/tree/release/adicionando-funcionalidades-do-firebase)
