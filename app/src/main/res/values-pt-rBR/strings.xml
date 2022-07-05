@@ -9,5 +9,6 @@
     <string name="cd_share_icon">Icone de compartilhar.</string>
 
     <string name="txt_open_link">Abrir Link</string>
+    <string name="error_network">Falha na rede de dados</string>
 
 </resources>
