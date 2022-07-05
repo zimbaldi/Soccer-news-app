@@ -1,5 +1,8 @@
 package me.dio.soccernews.ui.news;
 
+import android.os.AsyncTask;
+
+import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -14,7 +17,7 @@ import retrofit2.Response;
 
 public class NewsViewModel extends ViewModel {
 
-    public enum State{
+    public enum State {
         DOING, DONE, ERROR
     }
 
@@ -30,8 +33,8 @@ public class NewsViewModel extends ViewModel {
         state.setValue(State.DOING);
         SoccerNewsRepository.getInstance().getRemoteApi().getNews().enqueue(new Callback<List<News>>() {
             @Override
-            public void onResponse(Call<List<News>> call, Response<List<News>> response) {
-                if (response.isSuccessful()){
+            public void onResponse(@NonNull Call<List<News>> call, @NonNull Response<List<News>> response) {
+                if (response.isSuccessful()) {
                     news.setValue(response.body());
                     state.setValue(State.DONE);
                 } else {
@@ -40,19 +43,21 @@ public class NewsViewModel extends ViewModel {
             }
 
             @Override
-            public void onFailure(Call<List<News>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<News>> call, @NonNull Throwable t) {
                 state.setValue(State.ERROR);
             }
         });
     }
 
-    public void saveNews(News news){
-        SoccerNewsRepository.getInstance().getLocalDb().newsDao().save(news);
+    public void saveNews(News news) {
+        AsyncTask.execute(() ->SoccerNewsRepository.getInstance().getLocalDb().newsDao().save(news));
     }
 
     public LiveData<List<News>> getNews() {
         return this.news;
     }
 
-    public LiveData<State> getState() { return this.state; }
+    public LiveData<State> getState() {
+        return this.state;
+    }
 }
